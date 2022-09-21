@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../jQuery.js"></script>
+		<style>
+			div {
+				display: none;
+				height: 300px;
+				width: 300px;
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<button>fade in</button>
+		<button>fade out</button>
+		<button>fade toggle</button>
+		<button>opacity</button>
+
+		<div></div>
+
+		<script>
+			$(function() {
+				$('button').eq(0).click(function(){
+					$('div').fadeIn()
+				})
+				
+				$('button').eq(1).click(function(){
+					$('div').fadeOut()
+				})
+				
+				$('button').eq(2).click(function(){
+					$('div').fadeToggle()
+				})
+				
+				$('button').eq(3).click(function(){
+					$('div').fadeTo(1000, 0.5)
+				})
+				
+				
+			})
+		</script>
+	</body>
+</html>
